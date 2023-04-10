@@ -1,0 +1,18 @@
+{
+  "name": "tuniaoui-vue2-uniapp",
+  "version": "1.0.0",
+  "description": "宠物管理",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "宠物",
+    "管理"
+  ],
+  "author": "星如雨",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^3.0.0"
+  }
+}
