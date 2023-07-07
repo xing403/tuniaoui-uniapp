@@ -54,7 +54,7 @@
 				</view>
 			</view>
 			<view class="tn-text-bold tn-text-xl">最近预约</view>
-			<view v-for="(item, index) in appointments" :key="index" class="list">
+			<view v-for="(item, index) in appointments" :key="index" class="list" v-if="appointments.length > 0">
 				<view class="list__left">
 					<view class="list__left__text">{{item.title}}</view>
 				</view>
@@ -223,14 +223,14 @@
 		padding: 20px;
 
 		&-title {
-			font-size: 24px;
+			font-size: 18px;
 			margin: 5px;
 			text-align: left;
 		}
 
 		&-value {
 			margin: 5px;
-			font-size: 30px;
+			font-size: 24px;
 			font-weight: 600;
 			text-align: right;
 		}

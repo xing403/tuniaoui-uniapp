@@ -15,12 +15,12 @@
 				<log ref="log"></log>
 			</scroll-view>
 		</view>
-		<view v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}">
+	<!-- <view v-if="tabberPageLoadFlag[3]" :style="{display: currentIndex === 3 ? '' : 'none'}">
 			<scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
 				<Basic ref="basic"></Basic>
 			</scroll-view>
 		</view>
-		<view v-if="tabberPageLoadFlag[4]" :style="{display: currentIndex ===4 ? '' : 'none'}">
+			<view v-if="tabberPageLoadFlag[4]" :style="{display: currentIndex ===4 ? '' : 'none'}">
 			<scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
 				<components ref="components"></components>
 			</scroll-view>
@@ -39,12 +39,10 @@
 			<scroll-view class="custom-tabbar-page" scroll-y enable-back-to-top @scrolltolower="tabbarPageScrollLower">
 				<tuniao ref="about"></tuniao>
 			</scroll-view>
-		</view>
-
+		</view> -->
 		<tn-tabbar v-model="currentIndex" :list="tabbarList" activeColor="#838383" inactiveColor="#AAAAAA"
 			activeIconColor="tn-cool-bg-color-7" :animation="true" :safeAreaInsetBottom="true" @change="switchTabbar">
 		</tn-tabbar>
-
 	</view>
 </template>
 
@@ -87,34 +85,34 @@
 						out: true
 					}, {
 						title: '我的',
-						activeIcon: 'home-love-fill',
-						inactiveIcon: 'home-love'
+						activeIcon: 'my-circle-fill',
+						inactiveIcon: 'my-circle'
 					},
-					{
-						title: '元素',
-						activeIcon: 'count-fill',
-						inactiveIcon: 'menu'
-					},
-					{
-						title: '组件',
-						activeIcon: 'honor-fill',
-						inactiveIcon: 'honor'
-					},
-					{
-						title: '会员',
-						activeIcon: 'vip-fill',
-						inactiveIcon: 'vip',
-						activeIconColor: '#FFFFFF',
-						inactiveIconColor: '#FFFFFF',
-						iconSize: 50,
-						out: true
-					},
-					{
-						title: '发现',
-						activeIcon: 'discover-fill',
-						inactiveIcon: 'discover',
-						count: 100
-					},
+					// {
+					// 	title: '元素',
+					// 	activeIcon: 'count-fill',
+					// 	inactiveIcon: 'menu'
+					// },
+					// {
+					// 	title: '组件',
+					// 	activeIcon: 'honor-fill',
+					// 	inactiveIcon: 'honor'
+					// },
+					// {
+					// 	title: '会员',
+					// 	activeIcon: 'vip-fill',
+					// 	inactiveIcon: 'vip',
+					// 	activeIconColor: '#FFFFFF',
+					// 	inactiveIconColor: '#FFFFFF',
+					// 	iconSize: 50,
+					// 	out: true
+					// },
+					// {
+					// 	title: '发现',
+					// 	activeIcon: 'discover-fill',
+					// 	inactiveIcon: 'discover',
+					// 	count: 100
+					// },
 					// {
 					// 	title: '图鸟',
 					// 	activeIcon: 'computer-fill',
@@ -168,6 +166,7 @@
 	.index {
 		overflow: hidden;
 		height: 100%;
+		
 	}
 
 	.custom-tabbar-page {

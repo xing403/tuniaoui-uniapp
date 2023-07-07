@@ -62,16 +62,21 @@
 				"navigationBarTitleText": "",
 				"enablePullDownRefresh": false
 			}
-		}    ,{
-                    "path" : "login/login",
-                    "style" :                                                                                    
-                {
-                    "navigationBarTitleText": "",
-                    "enablePullDownRefresh": false
-                }
-                
-                }
-            ]
+		}, {
+			"path": "login/login",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		},{
+			"path": "forget/forget",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}]
 	}, {
 		"root": "basicPage",
 		"pages": [{
